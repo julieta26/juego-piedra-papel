@@ -1,0 +1,57 @@
+Index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="contenedor">
+
+        <h1>🪨 Piedra, Papel o Tijera ✂️</h1>
+        <p class="subtitulo">El primero en conseguir 3 puntos gana</p>
+
+        <div class="puntuacion">
+
+            <div class="jugador">
+                <p>Vos</p>
+                <span id="puntosJugador">0</span>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="jugador">
+                <p>Máquina</p>
+                <span id="puntosMaquina">0</span>
+            </div>
+
+        </div>
+
+        <div class="mensaje">
+            <p id="estado">Elegí una jugada</p>
+        </div>
+
+        <div class="opciones">
+            <button class="opcion" data-jugada="piedra">🪨 Piedra</button>
+            <button class="opcion" data-jugada="papel">📄 Papel</button>
+            <button class="opcion" data-jugada="tijera">✂️ Tijera</button>
+        </div>
+
+        <div class="jugadas">
+            <p id="eleccionJugador">Tu elección: -</p>
+            <p id="eleccionMaquina">Elección de la máquina: -</p>
+        </div>
+
+        <button id="botonReinicio">🔄 Volver a empezar</button>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

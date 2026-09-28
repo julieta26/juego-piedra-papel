@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    color: #2d3748;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 560px;
+
+    padding: 35px;
+    text-align: center;
+
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    margin-bottom: 8px;
+    color: #1a202c;
+    font-size: 26px;
+}
+
+.subtitulo {
+    color: #718096;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.puntuacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    margin-bottom: 25px;
+}
+
+.jugador {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.jugador p {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #4a5568;
+}
+
+.jugador span {
+    font-size: 48px;
+    font-weight: 800;
+    color: #3182ce;
+}
+
+.versus {
+    font-size: 20px;
+    font-weight: 900;
+    color: #cbd5e0;
+}
+
+.mensaje {
+    margin-bottom: 25px;
+}
+
+.mensaje p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2b6cb0;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.opcion,
+#botonReinicio {
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 22px;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.opcion {
+    background-color: #edf2f7;
+    color: #2d3748;
+}
+
+.opcion:hover {
+    background-color: #3182ce;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+}
+
+.jugadas {
+    margin: 25px 0;
+    padding: 18px;
+
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    line-height: 1.8;
+    color: #4a5568;
+}
+
+#botonReinicio {
+    background-color: #2d3748;
+    color: white;
+}
+
+#botonReinicio:hover {
+    background-color: #1a202c;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
